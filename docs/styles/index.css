@@ -9,22 +9,20 @@ body {
 .flex-container {
     display: flex;
     justify-content: center;
-    align-items: center;
     height:100%;
     background-color: whitesmoke;
 }
 
 .flex-container > .content {
-    width: 600px;
     color: darkslategray;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 992px) {
     .flex-container {
-      align-items: flex-start;
+        align-items: center;
     }
 
     .content {
-        width: 100%;
+        width: 768px;
     } 
 }

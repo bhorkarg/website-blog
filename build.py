@@ -8,7 +8,7 @@ with open('data/index.md') as file_index:
 with open('template/index.j2') as file_index_tmpl:
     index_tmpl = file_index_tmpl.read()
 
-index_data = markdown.markdown(index_md, extensions=['meta'])
+index_data = markdown.markdown(index_md, extensions=['meta', 'extra', 'attr_list'])
 
 index_html = Template(index_tmpl).render(body=index_data)
 
@@ -19,4 +19,6 @@ print('Index file generated')
 os.system('cp -rf template/styles/* docs/styles')
 print('Styles copied')
 
+os.system('cp -rf data/images/ docs/images')
+print('Images copied')
 
