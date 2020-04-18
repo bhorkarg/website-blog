@@ -1,1 +1,30 @@
-/* Placeholder for homepage css*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    background-color: whitesmoke;
+}
+
+.flex-container > .content {
+    width: 600px;
+    color: darkslategray;
+}
+
+@media screen and (max-width: 600px) {
+    .flex-container {
+      align-items: flex-start;
+    }
+
+    .content {
+        width: 100%;
+    } 
+}

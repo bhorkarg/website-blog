@@ -1,8 +1,9 @@
 ---
-type: home_page
-title: Gaurav Bhorkar - Home Page
+type: page
+title: Gaurav Bhorkar
 ---
 # Gaurav Bhorkar
+-----
 I am a cyber security professional based in southern Finland. This is my personal page on the www.
 
 * [LinkedIn](https://www.linkedin.com/in/gauravbhorkar/)
